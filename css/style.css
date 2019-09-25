@@ -1,0 +1,106 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap');
+
+
+/* General */
+body, html { height: 100%; }
+
+/* Type */
+h1, h2, h3 {
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+}
+
+h4, h5, h6, p {
+  font-family: "EB Garamond", serif;
+}
+
+img { width: 100%; }
+
+/* Bootstrap Customization */
+.container {
+  max-width: none;
+  padding: 0;
+}
+  .container .row { margin: 0; }
+
+/* Navbar */
+nav { padding: 25px 0; }
+
+  nav svg { width: 300px; }
+    nav svg path { fill: transparent; }
+
+    nav svg text {
+      font-family: "Hind", sans-serif;
+      font-size: 44px;
+    }
+
+    nav svg #top-curve-text { font-weight: 700; }
+    nav svg #top-curve-text textpath:nth-child(2) { fill: #884294; }
+    nav svg #bottom-curve-text {
+      fill: #3a7b2a;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+/* Custom Classes */
+/* type */
+.weight-light { font-weight: 300; }
+.weight-regular { font-weight: 400; }
+.weight-bold { font-weight: 700; }
+
+.main-purple { color: #884294; }
+.secondary-purple { color: #d3b7f1; }
+
+.main-green { color: #3a7b2a; }
+.secondary-green { color: #97d66d; }
+
+.white { color: #ffffff; }
+
+/* margins */
+.no-margin { margin: 0 !important; }
+
+.margin-top { margin-top: 15px; }
+.margin-bottom { margin-bottom: 15px; }
+.margin-left { margin-left: 15px; }
+.margin-right { margin-right: 15px; }
+
+.lg-margin-top { margin-top: 25px; }
+.lg-margin-bottom { margin-bottom: 25px; }
+.lg-margin-left { margin-left: 25px; }
+.lg-margin-right { margin-right: 25px; }
+
+/* padding */
+.no-padding { padding: 0 !important; }
+
+.lg-pad-top { padding-top: 25px; }
+.lg-pad-bottom { padding-bottom: 25px; }
+
+.exlg-pad-top { padding-top: 50px; }
+.exlg-pad-bottom { padding-bottom: 50px; }
+
+.align-bottom {
+  position: relative;
+  height: 100%;
+}
+  .align-bottom .item-to-align {
+    position: absolute;
+    bottom: 0;
+  }
+
+/* misc */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.parallax {
+  height: 100%;
+  min-height: 750px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
