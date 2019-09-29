@@ -1,22 +1,57 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&display=swap');
 
 /* General */
 body, html { height: 100%; }
+img { width: 100%; }
+button {
+  background-color: #884294;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: 13px 15px 10px 15px;
+  text-transform: uppercase;
+  transition: ease 0.2s;
+}
+  button:hover {
+    opacity: 0.75;
+  }
 
 /* Type */
-h1, h2, h3 {
+h1, h2 {
   font-family: "Hind", sans-serif;
   font-weight: 400;
+  margin: 0;
 }
 
-h4, h5, h6, p {
-  font-family: "EB Garamond", serif;
+h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
-img { width: 100%; }
+p {
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  transition: ease 0.2s;
+}
+  a:hover {
+    opacity: 0.5;
+    color: #000;
+    text-decoration: none;
+  }
 
 /* Bootstrap Customization */
 .container {
@@ -26,9 +61,11 @@ img { width: 100%; }
   .container .row { margin: 0; }
 
 /* Navbar */
-nav { padding: 25px 0; }
-
-  nav svg { width: 300px; }
+nav {
+  padding: 25px 50px;
+  position: relative;
+}
+  nav svg { width: 150px; }
     nav svg path { fill: transparent; }
 
     nav svg text {
@@ -46,6 +83,9 @@ nav { padding: 25px 0; }
 
 /* Custom Classes */
 /* type */
+.hind { font-family: "Hind", sans-serif; }
+.roboto-condensed { font-family: "Roboto Condensed", sans-serif; }
+
 .weight-light { font-weight: 300; }
 .weight-regular { font-weight: 400; }
 .weight-bold { font-weight: 700; }
@@ -61,10 +101,25 @@ nav { padding: 25px 0; }
 /* margins */
 .no-margin { margin: 0 !important; }
 
+.xs-margin-top { margin-top: 5px; }
+.xs-margin-bottom { margin-bottom: 5px; }
+.xs-margin-left { margin-left: 5px; }
+.xs-margin-right { margin-right: 5px; }
+
+.sm-margin-top { margin-top: 10px; }
+.sm-margin-bottom { margin-bottom: 10px; }
+.sm-margin-left { margin-left: 10px; }
+.sm-margin-right { margin-right: 10px; }
+
 .margin-top { margin-top: 15px; }
 .margin-bottom { margin-bottom: 15px; }
 .margin-left { margin-left: 15px; }
 .margin-right { margin-right: 15px; }
+
+.md-margin-top { margin-top: 20px; }
+.md-margin-bottom { margin-bottom: 20px; }
+.md-margin-left { margin-left: 20px; }
+.md-margin-right { margin-right: 20px; }
 
 .lg-margin-top { margin-top: 25px; }
 .lg-margin-bottom { margin-bottom: 25px; }
@@ -77,8 +132,8 @@ nav { padding: 25px 0; }
 .lg-pad-top { padding-top: 25px; }
 .lg-pad-bottom { padding-bottom: 25px; }
 
-.exlg-pad-top { padding-top: 50px; }
-.exlg-pad-bottom { padding-bottom: 50px; }
+.xl-pad-top { padding-top: 50px; }
+.xl-pad-bottom { padding-bottom: 50px; }
 
 .align-bottom {
   position: relative;
@@ -94,6 +149,11 @@ nav { padding: 25px 0; }
   display: flex;
   justify-content: center;
 }
+
+.flex-container.flex-end { justify-content: flex-end; }
+.flex-container.space-between { justify-content: space-between; }
+
+.flex-container.align-end { align-items: flex-end; }
 
 .parallax {
   height: 100%;
