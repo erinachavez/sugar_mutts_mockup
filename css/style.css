@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700&display=swap');
 
 /* General */
-body, html { height: 100%; }
+body, html { margin: 0; height: 100%; }
 img { width: 100%; }
 button {
   background-color: #884294;
@@ -60,31 +60,42 @@ a {
 }
   .container .row { margin: 0; }
 
+/* Logo */
+svg.svg-logo { width: 150px; }
+  svg.svg-logo path { fill: transparent; }
+
+  svg.svg-logo text {
+    font-family: "Hind", sans-serif;
+    font-size: 44px;
+  }
+
+  svg.svg-logo #top-curve-text { font-weight: 700; }
+  svg.svg-logo #top-curve-text textpath:nth-child(2) { fill: #884294; }
+  svg.svg-logo #bottom-curve-text {
+    fill: #3a7b2a;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
 /* Navbar */
 nav {
   padding: 25px 50px;
   position: relative;
 }
-  nav svg { width: 150px; }
-    nav svg path { fill: transparent; }
-
-    nav svg text {
-      font-family: "Hind", sans-serif;
-      font-size: 44px;
-    }
-
-    nav svg #top-curve-text { font-weight: 700; }
-    nav svg #top-curve-text textpath:nth-child(2) { fill: #884294; }
-    nav svg #bottom-curve-text {
-      fill: #3a7b2a;
-      font-weight: 300;
-      letter-spacing: 2px;
-    }
 
 /* Custom Classes */
 /* type */
 .hind { font-family: "Hind", sans-serif; }
 .roboto-condensed { font-family: "Roboto Condensed", sans-serif; }
+.quattrocento { font-family: "Quattrocento", serif; }
+
+.xl-h1 {
+  font-size: 3rem;
+}
+
+.sm-p {
+  font-size: .9rem;
+}
 
 .weight-light { font-weight: 300; }
 .weight-regular { font-weight: 400; }
@@ -131,9 +142,16 @@ nav {
 
 .lg-pad-top { padding-top: 25px; }
 .lg-pad-bottom { padding-bottom: 25px; }
+.lg-pad-left { padding-left: 25px; }
+.lg-pad-right { padding-right: 25px; }
 
 .xl-pad-top { padding-top: 50px; }
 .xl-pad-bottom { padding-bottom: 50px; }
+.xl-pad-left { padding-left: 50px; }
+.xl-pad-right { padding-right: 50px; }
+
+.dbl-pad-left { padding-left: 100px; }
+.dbl-pad-right { padding-right: 100px; }
 
 .align-bottom {
   position: relative;
@@ -145,11 +163,14 @@ nav {
   }
 
 /* misc */
+.h-100 { height: 100%; }
+
 .flex-container {
   display: flex;
   justify-content: center;
 }
 
+.flex-container.flex-start { justify-content: flex-start; }
 .flex-container.flex-end { justify-content: flex-end; }
 .flex-container.space-between { justify-content: space-between; }
 
@@ -164,3 +185,4 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
+  .parallax .filter-bg { background-color: rgba(0, 0, 0, 0.2); }
