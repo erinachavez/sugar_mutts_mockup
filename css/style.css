@@ -53,6 +53,9 @@ a {
     text-decoration: none;
   }
 
+/* Icons */
+p i { font-size: 1.2rem; }
+
 /* Bootstrap Customization */
 .container {
   max-width: none;
@@ -162,9 +165,43 @@ nav {
     bottom: 0;
   }
 
-/* misc */
-.h-100 { height: 100%; }
+/* hover dropdowns */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+  .dropdown .dropdown-link {
+    cursor: pointer;
+    transition: ease 0.2s;
+  }
+
+  .dropdown:hover .dropdown-link { opacity: 0.5; }
+
+  .dropdown .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+    min-width: 160px;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-menu { display: block; }
+
+    .dropdown .dropdown-menu a {
+      display: block;
+      padding: 5px 10px;
+    }
+
+    .dropdown .dropdown-menu a:hover {
+      background-color: #884294;
+      color: #fff;
+      opacity: 1;
+    }
+
+/* flex container */
 .flex-container {
   display: flex;
   justify-content: center;
@@ -176,13 +213,30 @@ nav {
 
 .flex-container.align-end { align-items: flex-end; }
 
+/* parallax */
 .parallax {
   height: 100%;
-  min-height: 750px;
+  max-height: 750px;
 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax.xs-parallax {
+  max-height: 200px;
+}
+
+.parallax.sm-parallax {
+  max-height: 400px;
+}
+
   .parallax .filter-bg { background-color: rgba(0, 0, 0, 0.2); }
+  .parallax .filter-bg-dark { background-color: rgba(0, 0, 0, 0.5); }
+
+/* misc */
+.h-100 { height: 100%; }
+
+.bg-secondary-purple { background-color: #d3b7f1; }
+.bg-secondary-green { background-color: #97d66d; }
