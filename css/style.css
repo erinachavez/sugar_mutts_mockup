@@ -64,7 +64,11 @@ p i { font-size: 1.2rem; }
   .container .row { margin: 0; }
 
 /* Logo */
-svg.svg-logo { width: 150px; }
+svg.svg-logo {
+  width: 150px;
+  cursor: pointer;
+}
+
   svg.svg-logo path { fill: transparent; }
 
   svg.svg-logo text {
