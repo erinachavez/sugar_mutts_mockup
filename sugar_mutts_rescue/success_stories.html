@@ -6,8 +6,12 @@
 
 		<title>Sugar Mutts Rescue | Success Stories</title>
 
+		<!-- favicon -->
+		<link rel="icon" href="../media/images/sugar_mutts_logo_dogs.png" type="image/png">
+
 		<!-- scripts -->
 		<script src="https://kit.fontawesome.com/8131374b65.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../js/site.js"></script>
 
 		<!-- styles -->
 		<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,22 +19,9 @@
 		<link type="text/css" rel="stylesheet" href="../css/style.css">
 	</head>
 
-	<body>
+	<body class="sugar-mutts-rescue">
 		<nav class="flex-container space-between">
-			<svg class="svg-logo" viewBox="0 0 400 400" onclick="location.href='../index.html'">
-				<path id="top-curve" d="M 30.0,217.5 A 170.0,170.0 0.0 1,1 370.0,217.5 A 170.0,170.0 0.0 1,1 30.0,217.5"/>
-        <path id="bottom-curve" d="M12.5,200a187.5,187.5 0 1,0 375,0a187.5,187.5 0 1,0 -375,0"/>
-
-				<text id="top-curve-text">
-					<textPath xlink:href="#top-curve" startOffset="30px">&#9675;</textPath>
-					<textPath xlink:href="#top-curve" startOffset="70px">Sugar Mutts Rescue</textPath>
-					<textPath xlink:href="#top-curve" startOffset="477px">&#9675;</textPath>
-				</text>
-				<text id="bottom-curve-text">
-					<textPath xlink:href="#bottom-curve" startOffset="3px">Sky Meadow Farm Sanctuary</textPath>
-				</text>
-				<image href="../media/images/sugar_mutts_logo_dogs.png" width="200px" x="103" y="95" />
-			</svg>
+			<a href="../index.html" class="no-fade"><img class="logo" src="../media/images/sugar_mutts_logo.jpg"></a>
 
 			<div class="flex-container flex-end align-end">
 				<h4 class="md-margin-right"><a href="../about.html">About</a></h4>
@@ -61,24 +52,161 @@
 			</div>
 		</nav>
 
+		<div class="container gallery">
+			<div class="row">
+				<div class="col-10 offset-1 xl-pad-top xl-pad-bottom">
+					<h1 class="roboto-condensed xl-h1 lg-margin-bottom main-purple">Success Stories</h1>
+					<div class="container">
+						<div class="row no-gutters">
+							<div class="col-4">
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success1.jpeg" onclick="openModal();currentSlide(1)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success4.jpeg" onclick="openModal();currentSlide(4)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success7.jpeg" onclick="openModal();currentSlide(7)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success10.jpeg" onclick="openModal();currentSlide(10)">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success2.jpeg" onclick="openModal();currentSlide(2)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success5.jpeg" onclick="openModal();currentSlide(5)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success8.jpeg" onclick="openModal();currentSlide(8)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success11.jpeg" onclick="openModal();currentSlide(11)">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success3.jpeg" onclick="openModal();currentSlide(3)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success6.jpeg" onclick="openModal();currentSlide(6)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success9.jpeg" onclick="openModal();currentSlide(9)">
+								</div>
+								<div class="gallery-img sm-margin-left sm-margin-right md-margin-bottom">
+									<img src="../media/images/success12.jpeg" onclick="openModal();currentSlide(12)">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lightbox">
+		  <span class="close" onclick="closeModal();"><i class="fas fa-times"></i></span>
+		  <div class="lightbox-content">
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success1.jpeg">
+						<p>"He's a sweetheart! Everyone loves him! If every rescue was this easy...!" &mdash;Tom</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success2.jpeg">
+						<p>
+							"We're so insanely happy and so incredibly grateful that you brought India into our lives. She's adapting at lightning speed.
+							In short we love her, so thank you for that... and of course thank you for the work you do. It's important, it's precious and
+							it must be very hard. You have our admiration and thanks." - Max & Kris
+						</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success3.jpeg">
+						<p>"He is settling in just fine. We love him!! Thank you so much we are so happy. :)" - Kathy & Robert</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success4.jpeg">
+						<p>After many trials and tribulations, Frank (formerly Mickey) has found his forever home... and is now a biker dog!!</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success5.jpeg">
+						<p>
+							"Ginger is the perfect dog: Sweet, playful, cuddly and hilarious! She loves taking walks, hunting squirrels and snacking
+							on apples. Thank you for rescuing Ginger, we adore her!" - Michelle, Ginger's Mom
+						</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success6.jpeg">
+						<p>"She is doing really well and shaping up to be a wonderful dog!" - Brian, Ladybug's Adopter</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success7.jpeg">
+						<p>"She's an absolute angel." - Jon, Winnie's Dad</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success8.jpeg">
+						<p>Boji and his Daddy!</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success9.jpeg">
+						<p>
+							Molly loves the kids! She licks them at night when they fall asleep and every morning she washes them with more kisses!
+							We are in love with her!" - Christina, Molly's new Mom
+						</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success10.jpeg">
+						<p>
+							"Thank you so much for saving Gracie so that she could join our family. She is so sweet and smart, we love her every chance
+							that we get. She loves to run around the yard and play with her toys. She is a great addition to our family of 5 and we can
+							not wait to include her in our Christmas picture this year, we'll be sure to send you one. Thanks again for our beautiful
+							Gracie!!" - The Pearson Family
+						</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success11.jpeg">
+						<p>"Thanks so much for all your help Amy. We're super happy we found Caly!" - Lauren & Robert</p>
+					</div>
+		    </div>
+		    <div class="lightbox-slide">
+					<div>
+			      <img src="../media/images/success12.jpeg">
+						<p>"He is the best. Sweetest dog ever. I love him!" - Gabby</p>
+					</div>
+		    </div>
+
+		    <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+		    <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+		  </div>
+		</div>
+
 		<footer class="container xl-pad-top lg-pad-bottom lg-pad-left xl-pad-right">
 			<div class="row">
 				<div class="col-8 flex-container flex-start">
 					<div class="xl-pad-right">
-						<svg class="svg-logo" viewBox="0 0 400 400" onclick="location.href='../index.html'">
-							<path id="top-curve" d="M 30.0,217.5 A 170.0,170.0 0.0 1,1 370.0,217.5 A 170.0,170.0 0.0 1,1 30.0,217.5"/>
-			        <path id="bottom-curve" d="M12.5,200a187.5,187.5 0 1,0 375,0a187.5,187.5 0 1,0 -375,0"/>
-
-							<text id="top-curve-text">
-								<textPath xlink:href="#top-curve" startOffset="30px">&#9675;</textPath>
-								<textPath xlink:href="#top-curve" startOffset="70px">Sugar Mutts Rescue</textPath>
-								<textPath xlink:href="#top-curve" startOffset="477px">&#9675;</textPath>
-							</text>
-							<text id="bottom-curve-text">
-								<textPath xlink:href="#bottom-curve" startOffset="3px">Sky Meadow Farm Sanctuary</textPath>
-							</text>
-							<image href="../media/images/sugar_mutts_logo_dogs.png" width="200px" x="103" y="95" />
-						</svg>
+						<a href="../index.html" class="no-fade"><img class="logo" src="../media/images/sugar_mutts_logo.jpg"></a>
 					</div>
 					<div class="xl-pad-right">
 						<p class="weight-bold roboto-condensed"><a href="../index.html">Home</a></p>
@@ -110,7 +238,7 @@
 					</div>
 				</div>
 				<div class="col-4">
-					<h4 class="weight-bold sm-margin-bottom">Help Us Out!</h4>
+					<h4 class="weight-bold sm-margin-bottom main-purple">Help Us Out!</h4>
 					<p class="sm-p sm-margin-bottom">
 						We could always use monetary donations to help us provide vet care, food, supplies, transportation, etc. If you're able to make
 						a donation, you can easily do so on our donate page. Thank you in advance for all of your help! Woof!
