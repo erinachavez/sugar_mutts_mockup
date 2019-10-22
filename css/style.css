@@ -24,7 +24,7 @@ button {
     opacity: 0.75;
   }
 
-.sky-meadow-farms-sanctuary button { background-color: #3a7b2a; }
+.skymeadow-farm-sanctuary button { background-color: #3a7b2a; }
 
 form input,
 form select,
@@ -232,6 +232,10 @@ footer {
     bottom: 0;
   }
 
+.align-center {
+  align-items: center;
+}
+
 /* hover dropdowns */
 .dropdown {
   position: relative;
@@ -268,7 +272,7 @@ footer {
       opacity: 1;
     }
 
-    .sky-meadow-farms-sanctuary .dropdown .dropdown-menu a:hover { background-color: #3a7b2a; }
+    .skymeadow-farm-sanctuary .dropdown .dropdown-menu a:hover { background-color: #3a7b2a; }
 
 /* flex container */
 .flex-container {
@@ -310,7 +314,7 @@ footer {
   cursor: pointer;
 }
 
-.sky-meadow-farms-sanctuary .gallery .gallery-img { background-color: #97d66d; }
+.skymeadow-farm-sanctuary .gallery .gallery-img { background-color: #97d66d; }
 
   .gallery .gallery-img img { transition: ease 0.2s; }
     .gallery .gallery-img img:hover { opacity: 0.5; }
